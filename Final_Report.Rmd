@@ -1,2 +1,102 @@
+---
+output: 
+  pdf_document:
+    citation_package: natbib
+    keep_tex: true
+    fig_caption: true
+    latex_engine: pdflatex
+    template: ./mssp_template.tex
+bibliography: master.bib
+header-includes:
+  - \usepackage{hyperref}
+  - \usepackage{array}   
+  - \usepackage{caption}
+  - \usepackage{graphicx}
+  - \usepackage{siunitx}
+  - \usepackage[table]{xcolor}
+  - \usepackage{multirow}
+  - \usepackage{hhline}
+  - \usepackage{calc}
+  - \usepackage{tabularx}
+  - \usepackage{fontawesome}
+  - \usepackage{fancyhdr}
+  - \usepackage[para,online,flushleft]{threeparttable}
+biblio-style: apsr
+title: "MSSP Report Starter and Template"
+thanks: "**Corresponding author**: xxxx@bu.edu"
+author:
+- name: Name of the Consultants
+  affiliation: Boston University
+abstract: "This is where you will write the abstract.  Abstract is one pragraph summary of what the report is about.  It should include the high level description as well as the results."
+keywords: "keyword 1, keyword 2, keyword 3"
+date: "`r format(Sys.time(), '%B %d, %Y')`"
+geometry: margin=1in
+fontfamily: libertine
+fontsize: 11pt
+# spacing: double
+endnote: no
+---
+
+\addtolength{\headheight}{1.0cm} 
+\fancypagestyle{plain}{} 
+\thispagestyle{fancy} 
+\fancyhead[R]{\includegraphics[width = 80pt]{./figures/MSSP-square-logo.png}}
+\renewcommand{\headrulewidth}{0pt} 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache=TRUE,
+                      message=FALSE, warning=FALSE,
+                      fig.path='figures/',
+                      cache.path = '_cache/',
+                      fig.process = function(x) {
+                      x2 = sub('-\\d+([.][a-z]+)$', '\\1', x)
+                      if (file.rename(x, x2)) x2 else x
+                      })
+```
 
 
+# Introduction
+
+This is where you explain what the project is about.  You can show EDA figures but only show figures that you refer to in the text.  Everything else should be put in the Appendix.
+
+# Result
+
+This is where you show your analysis.  You can show the figures and analysis results.
+But the results should be summarized in ways that it is easy to consume for the reader.
+All the raw R output should go to the appendix.
+Figures that you refer to can also be included but figures such as residual plots that are used to validate the result and does not contribute to the question should be sent to the appendix.
+
+
+# Conclusion
+
+This is where you summarize the take away message.  
+
+# Acknowledgement
+
+Acknowledgement is where you list the people who you want to acknowledge.  
+
+e.g. I would like to thank xxx for providing us with advice on the statistical modeling.
+
+# Contribution
+
+Contribution is where you initialize the contributor and make explicit about who did what.
+
+e.g.
+XY performed the EDA, BA wrote the report, ZX worked on the presentation, etc..
+
+# Appendix
+
+Potential subsections:
+
+## Supplemental Figures
+## Validation
+## Code and outputs
+
+<!--
+# References
+\setlength{\parindent}{-0.2in}
+\setlength{\leftskip}{0.2in}
+\setlength{\parskip}{8pt}
+\vspace*{-0.2in}
+\noindent
+-->
