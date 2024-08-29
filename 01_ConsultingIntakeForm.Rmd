@@ -1,0 +1,83 @@
+---
+title: "MSSP Consulting: Limited Duration Project"
+subtitle: "Description and Intended Scope"
+geometry: "left=2cm,right=2cm,top=2cm,bottom=1.2cm"
+output: 
+  pdf_document:
+header-includes:
+  - \usepackage{fontawesome}
+  - \usepackage{fancyhdr}
+  - \usepackage[most]{tcolorbox}
+  - \definecolor{light-yellow}{rgb}{0.9607843, 1, 0.9803922}
+  - \newtcolorbox{myquote}{colback=light-yellow,grow to right by=-7mm,grow to left by=-7mm, boxrule=1pt,boxsep=0pt,breakable}
+  - \newcommand{\boxcom}[1]{\begin{myquote} \emph{#1} \end{myquote}}
+fontfamily: libertine
+fontsize: 11pt
+---
+\addtolength{\headheight}{-1.0cm} 
+\fancypagestyle{plain}{} 
+\thispagestyle{fancy} 
+\fancyhead[R]{\includegraphics[width = 80pt]{./figures/MSSP-square-logo.png}}
+\renewcommand{\headrulewidth}{0pt} 
+
+```{r packages, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,fig.width=5,fig.height=3.5 ,out.width="95%",fig.align = "center")
+par (mar=c(3,3,2,1), mgp=c(2,.7,0), tck=-.01)
+```
+
+- Client:  [Client Name]
+- Advisor / Collaborator: [Advisor Name or names of Collaborators if applicable]
+- School / Department: [School/Department Name] 
+- MSSP Team: [Team Member Names]
+- Intake Date: [MM]/[DD]/[YYYY]
+- Faculty Supervisor: [Faculty Name]
+
+### Project description and Goals:
+Based on the information provided during the intake meeting, our understanding of the Client’s project is as follows.
+
+\boxcom{
+[This is where you provide high-level summary of how you understanding the client project.  Please make sure you include details that might be relevant.  (example: overall question, design of the study, number of samples, etc )]
+}
+
+
+
+
+
+### Initial milestone and Deliverables:
+
+To address the Client’s needs, we will use reasonable efforts to provide the following initial work product for Client’s review by [MM]/[DD]/[YYYY].
+
+\boxcom{
+[This is where you describe what you will deliver by what date.  It is important NOT to promise what you might not be able to deliver. ]
+}
+
+
+
+
+
+
+
+
+\newpage
+ 
+### Purpose of the consulting: 
+The purpose of this consulting arrangement is 1) to train both Boston University (BU) MSSP and PhD students on the process of statistical consultation and 2) to provide a service to improve the quantitative aspects of research/projects on BU’s campus.  Student consultants will be monitored by MSSP faculty in order to help the consultants provide their best possible service.  Nevertheless, we ask that you understand that students are not (yet!) professional consultants, and we thank you for your patience and cooperation in this regard. 
+ 
+### Scope of the project: 
+The project described below has been approved for what we call “limited duration” consultation.  As the name suggests, such projects are intended to be fairly focused, with a total duration of no more than 10 student hours’ worth of work. Consultation will involve MSSP student consultants and PhD leaders, supervised by MSSP program faculty.  An initial intake meeting should have been held and additional meetings, as needed, will be arranged at the mutual convenience of the Client and the student consultants.   
+
+### Attribution: 
+When the scope of the work is of ‘limited duration’ but nevertheless is used in any sort of academic product (e.g., presentation, project, abstract, or publication), we would ask that you please include an appropriate acknowledgment. For example, Clients may include “We acknowledge the help of [NAME] of the MSSP statistical consulting service under the guidance of Professor [NAME]” as a footnote accompanying grant support and related uses^[We explicitly do not insist upon co-authorship for projects of `limited duration’ type -- although, of course, if the conventions of your field permit, co-authorship for at least a subset of the consulting team is always greatly appreciated.  This MSSP policy is intended to allow clients maximum flexibility in seeking out and benefiting from our statistical consulting work while, at the same time, promoting best practice regarding academic intellectual property.  Our perspective is informed by the American Statistical Association’s guide When You Consult a Statistician … What to Expect, which states that any such product “should acknowledge the participation of the statistician, consistent with the value of that participation.”].
+
+### Modification of Intended Scope of work: 
+At any time during this process, if both the Client and the MSSP Team mutually agree that the above proposal does not adequately address the Client’s needs, we leave open the possibility of holding additional discussions to alter the above proposal.  Consultations anticipated to require substantially more than 10 hours of work may be recommended for collaborative consulting.  Evaluation of such recommendations typically will include a discussion of co-authorship on resulting end-products.
+
+### Disclaimer: 
+Client acknowledges the work will be performed by current students in BU’s MSSP and PhD Program with some faculty supervision. As such, we make no representations or warranties, express or implied, of any nature, including without limitation, warranties of merchantability or fitness for a particular purpose. Client acknowledges and agrees that all work performed is provided on an “as-is” basis only. We will use reasonable efforts to preserve the privacy and security of data provided to BU or work product generated by BU and its students and faculty that includes material identified by Client as confidential, but we shall have no liability for any loss or release of data or data use.
+
+<!-- [Optional (add if Client is affiliated with BU but is a separate legal entity – e.g., BMC, Ryan Center) Release: Client releases BU and its trustees, employees and any students participating in this project from any and all claims, liability, and damages of any kind arising from Client’s use of any work product or other use of the results of the project.] -->
+ 
+
+
+
+
